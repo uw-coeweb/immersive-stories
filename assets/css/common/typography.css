@@ -1,0 +1,50 @@
+@import url('https://fonts.googleapis.com/css2?family=PT+Serif:ital,wght@1,700&display=swap');
+
+html {
+    font-size: 0.875rem;
+}
+
+body {
+  line-height: 1.5;
+}
+
+.title {
+  font-style: italic;
+  font-weight: bold;
+  font-size: 4rem;
+  line-height: 1.1;
+  margin-bottom: 1rem;
+  font-family: 'PT Serif', serif;
+}
+
+.subtitle {
+  font-size: 1.01rem;
+  font-family: open-sans,"Helvetica Neue",Helvetica,Arial,sans-serif;
+  font-weight: 800;
+  letter-spacing: 2.5px;
+  text-transform: uppercase;
+}
+
+.uwcoe-stories-text-light {
+  color: white;
+  text-shadow: 0 0 3px rgba(37,37,37,.65);
+}
+
+.uwcoe-stories-text-dark {
+  color: #3D3D3D;
+}
+
+.uwcoe-stories-text-purple {
+  color: #4b2e84;
+}
+
+/* // Large devices (desktops, 992px and up) */
+@media screen and (min-width: 992px) {
+  .title {
+    font-size: 7rem;
+  }
+  
+  .subtitle {
+    font-size: 1.25rem;
+  }
+}

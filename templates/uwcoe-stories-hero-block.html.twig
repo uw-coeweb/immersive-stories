@@ -1,0 +1,30 @@
+{%
+  set containerClasses = [
+    'uwcoe-stories-container',
+    'uwcoe-stories-hero',
+    'full',
+    background.type == 'image' ? 'background-image',
+  ]
+%}
+{%
+  set styles = [
+    background.image ? 'background-image: url(' ~ background.image ~ ');',
+    background.color ? 'background-color: ' ~ background.color ~ ';',
+  ]
+%}
+{%
+  set contentClasses = [
+    'uwcoe-stories-content',
+    'uwcoe-stories-hero-content',
+    content.text_align == 'left' ? 'left',
+    content.text_align == 'center' ? 'center',
+    content.text_align == 'right' ? 'right',
+  ]
+%}
+<div class="{{ containerClasses|join(' ') }}" style="{{ styles|join(' ')}}">
+  <div class="{{ contentClasses|join(' ') }}">
+    <h1 class="title">{{ content.title_text }}</h1>
+    <p class="subtitle">{{ content.intro_text }}</p>
+  </div>
+</div>
+<div class="uwcoe-stories-waves"></div>

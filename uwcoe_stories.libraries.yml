@@ -1,0 +1,56 @@
+base-styles:
+  version: VERSION
+  css:
+    theme:
+      assets/css/base.css: {}
+section-layout:
+  version: VERSION
+  css:
+    theme:
+      assets/css/layouts/section.css: {}
+hero:
+  version: VERSION
+  css:
+    theme:
+      assets/css/blocks/hero.css: {}
+copy:
+  version: VERSION
+  css:
+    theme:
+      assets/css/blocks/copy.css: {}
+  js:
+    assets/js/utilities/floating-images.js: {}
+copy_aside:
+  version: VERSION
+  css:
+    theme:
+      assets/css/blocks/copy-aside.css: {}
+  js:
+    assets/js/utilities/floating-images.js: {}
+heading:
+  version: VERSION
+  css:
+    theme:
+      assets/css/blocks/heading.css: {}
+cta:
+  version: VERSION
+  css:
+    theme:
+      assets/css/blocks/cta.css: {}
+embedded-video:
+  version: VERSION
+  css:
+    theme:
+      assets/css/blocks/embedded-video.css: {}
+image-collage:
+  version: VERSION
+  css:
+    theme:
+      assets/css/blocks/image-collage.css: {}
+image-gallery:
+  version: VERSION
+  css:
+    theme:
+      assets/css/blocks/image-gallery.css: {}
+  js:
+    assets/js/blocks/image-gallery.js: {}

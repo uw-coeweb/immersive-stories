@@ -1,0 +1,52 @@
+.uwcoe-stories-image-collage {
+  width: calc(100% - 4rem);
+  margin-left: 2rem;
+  margin-right: 2rem;
+  display: flex;
+  flex-direction: column;
+}
+
+.uwcoe-stories-image-collage img {
+  padding-top: 1rem;
+  padding-bottom: 1rem;
+}
+
+.uwcoe-stories-image-collage-caption {
+  font-style: italic;
+  color: #666;
+  float: inherit;
+  font-size: 12px;
+  padding-left: 1rem;
+  padding-right: 1rem;
+  min-height: 3rem;
+}
+
+@media (min-width: 992px) {
+  .uwcoe-stories-image-collage {
+    flex-direction: row;
+    width: 100%;
+    margin-left: 0;
+    margin-right: 0;
+  }
+
+  .uwcoe-stories-image-collage-left, .uwcoe-stories-image-collage-right {
+    display: flex;
+    flex-direction: column;
+  }
+
+  .uwcoe-stories-image-collage-left {
+    width: 70%;
+    padding-right: 0.75rem;
+  }
+
+  .uwcoe-stories-image-collage-right {
+    width: 30%;
+    padding-left: 0.75rem;
+  }
+
+  .uwcoe-stories-image-collage-right .uwcoe-stories-media-responsive {
+    height: 50%;
+  }
+
+
+}

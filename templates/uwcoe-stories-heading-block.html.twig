@@ -1,0 +1,35 @@
+{%
+  set containerClasses = [
+    'uwcoe-stories-container',
+    'uwcoe-stories-heading',
+    background.type == 'image' ? 'background-image',
+  ]
+%}
+{%
+  set styles = [
+    background.image ? 'background-image: url(' ~ background.image ~ ');',
+    background.color ? 'background-color: ' ~ background.color ~ ';',
+  ]
+%}
+{%
+  set contentClasses = [
+    'uwcoe-stories-content',
+    'uwcoe-stories-heading-content',
+    content.text_align == 'left' ? 'left',
+    content.text_align == 'center' ? 'center',
+    content.text_align == 'right' ? 'right',
+  ]
+%}
+{%
+    set textColor = [
+        content.text_color == 'light' ? 'uwcoe-stories-text-light',
+        content.text_color == 'dark' ? 'uwcoe-stories-text-dark',
+        cotent.text_color == 'purple' ? 'uwcoe-stories-text-purple',
+    ]
+%}
+<div class="{{ containerClasses|join(' ') }}" style="{{ styles|join(' ')}}">
+  <div class="{{ contentClasses|join(' ') }}">
+    <h1 class="{{ 'title ' ~ textColor|join('') }}">{{ content.heading_text }}</h1>
+    <p class="{{ 'subtitle ' ~ textColor|join('') }}">{{ content.subheading_text }}</p>
+  </div>
+</div>

@@ -1,0 +1,30 @@
+{%
+  set containerClasses = [
+    'uwcoe-stories-container',
+    'uwcoe-stories-cta',
+    background.type == 'image' ? 'background-image',
+  ]
+%}
+{%
+  set styles = [
+    background.image ? 'background-image: url(' ~ background.image ~ ');',
+    background.color ? 'background-color: ' ~ background.color ~ ';',
+  ]
+%}
+{%
+  set contentClasses = [
+    'uwcoe-stories-content',
+    'uwcoe-stories-cta-content',
+  ]
+%}
+<div class="{{ containerClasses|join(' ') }}" style="{{ styles|join(' ')}}">
+  <div class="{{ contentClasses|join(' ') }}">
+    <h2 class="title">{{ content.title_text }}</h2>
+    <div>
+      {{ content.body }}
+    </div>
+    <a class="uwcoe-stories-button" href="{{ content.link_url }}" role="button" target="_blank">
+      {{ content.link_text }}
+    </a>
+  </div>
+</div>

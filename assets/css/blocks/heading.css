@@ -1,0 +1,19 @@
+.uwcoe-stories-heading {
+  height: 100vw;
+  max-height: 100vw;
+  align-items: flex-end;
+  margin-bottom: 2rem;
+}
+
+@media (min-width: 768px) {
+  .uwcoe-stories-heading {
+    min-height: 85vh;
+    height: auto;
+  }
+}
+
+@media (min-width: 992px) {
+  .uwcoe-stories-heading {
+    background-attachment: fixed;  /* Achieves parallax effect */
+  }
+}

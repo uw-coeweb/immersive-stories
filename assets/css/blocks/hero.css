@@ -1,0 +1,34 @@
+.uwcoe-stories-hero {
+  background-color: #4b2e84;
+}
+
+.uwcoe-stories-hero-content {
+  margin-bottom: 70px;
+}
+
+.uwcoe-stories-hero * {
+  color: white;
+}
+
+.uwcoe-stories-waves {
+  background-image: url('/modules/contrib/uwcoe_stories/assets/svg/waves.svg');
+  background-repeat: repeat-x;
+  background-size: cover;
+  height: 100px;
+  width: 101%;
+  margin-top: -70px;
+}
+
+@media (min-width: 1200px) {
+  .uwcoe-stories-hero .title {
+    font-size: 7rem;
+    line-height: .9;
+    margin-bottom: 1.5rem;
+  }
+
+
+  .uwcoe-stories-hero .subtitle {
+    font-size: 1.5rem;
+    line-height: normal;
+  }
+}

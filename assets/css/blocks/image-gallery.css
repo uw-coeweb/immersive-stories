@@ -1,0 +1,121 @@
+.uwcoe-stories-image-gallery {
+  width: 100%;
+  position: relative;
+  padding-bottom: 60%; /* 5:3 aspect ratio */
+  margin-bottom: 2rem;
+}
+
+.uwcoe-stories-image-gallery .slide {
+  position: absolute;
+  display: none;
+  opacity: 0;
+  top: 0;
+  left: 0;
+  width: 100%;
+  height: 100%;
+  display: none;
+  flex-direction: column;
+  overflow: hidden;
+}
+
+.uwcoe-stories-image-gallery .slide img {
+  width: 100%;
+  flex-grow: 1;
+  object-fit: cover;
+  object-position: 50% 50%;
+}
+
+.uwcoe-stories-image-gallery .slide .caption {
+  max-width: 800px;
+  margin: auto;
+  padding-top: 5px;
+  font-style: italic;
+}
+
+
+.uwcoe-stories-image-gallery .slide.active {
+  opacity: 1;
+  display: flex;
+	animation-name: fadeInOpacity;
+	animation-iteration-count: 1;
+	animation-timing-function: cubic-bezier(0.445, 0.05, 0.55, 0.95);
+	animation-duration: 600ms;
+}
+
+@keyframes fadeInOpacity {
+	0% {
+		opacity: 0;
+	}
+	100% {
+		opacity: 1;
+	}
+}
+
+.uwcoe-stories-image-gallery .nav-left, .nav-right {
+  height: 100%;
+  width: 60px;
+  cursor: pointer;
+  position: absolute;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  font-size: 2rem;
+  color: rgb(255, 255, 255);
+}
+
+.uwcoe-stories-image-gallery .nav-arrow:hover {
+  background-color: #4b2e84;
+}
+
+.uwcoe-stories-image-gallery .nav-left {
+  top: 0;
+  left: 0;
+}
+
+.uwcoe-stories-image-gallery .nav-right {
+  top: 0;
+  right: 0;
+}
+
+.uwcoe-stories-image-gallery .nav-indicators {
+  position: absolute;
+  width: 100%;
+  bottom: 0px;
+  height: 3rem;
+  list-style: none;
+  display: flex;
+  justify-content: center;
+  padding: 0px;
+}
+
+.uwcoe-stories-image-gallery .nav-indicator {
+  box-sizing: content-box;
+  -ms-flex: 0 1 auto;
+  flex: 0 1 auto;
+  width: 24px;
+  height: 3px;
+  margin-right: 3px;
+  margin-left: 3px;
+  text-indent: -999px;
+  cursor: pointer;
+  background-color: #fff;
+  background-clip: padding-box;
+  border-top: 10px solid transparent;
+  border-bottom: 10px solid transparent;
+  opacity: 1;
+}
+
+.uwcoe-stories-image-gallery .nav-indicator.active {
+  background-color: #4b2e84;
+}
+
+@media (min-width: 992px) {
+  .uwcoe-stories-image-gallery .nav-left, .nav-right {
+    font-size: 3.5rem;
+  }
+
+  .uwcoe-stories-image-gallery .nav-indicator {
+    width: 32px;
+    height: 5px;
+  }
+}

@@ -1,0 +1,74 @@
+<?php
+
+function uwcoe_stories_theme() {
+  return [
+    'page__uwcoe_stories' => [
+      'template' => 'page--uwcoe-stories',
+      'base hook' => 'page',
+    ],
+    'media__uwcoe_stories' => [
+      'template' => 'media--uwcoe-stories',
+      'base hook' => 'media',
+    ],
+    'uwcoe_stories_hero_block' => [
+      'variables' => [
+        'content' => [],
+        'background' => [],
+      ]
+    ],
+    'uwcoe_stories_copy_block' => [
+      'variables' => [
+        'content' => [],
+      ]
+    ],
+    'uwcoe_stories_copy_aside_block' => [
+      'variables' => [
+        'content' => [],
+        'aside' => [],
+      ],
+    ],
+    'uwcoe_stories_heading_block' => [
+      'variables' => [
+        'content' => [],
+        'background' => [],
+      ]
+    ],
+    'uwcoe_stories_cta_block' => [
+      'variables' => [
+        'content' => [],
+        'background' => [],
+      ]
+    ],
+    'uwcoe_stories_embedded_video_block' => [
+      'variables' => [
+        'content' => [],
+      ],
+    ],
+    'uwcoe_stories_image_collage_block' => [
+      'variables' => [
+        'images' => [],
+        'caption' => [],
+      ]
+    ],
+    'uwcoe_stories_image_gallery_block' => [
+      'variables' => [
+        'slides' => [],
+        'id' => '',
+      ],
+    ],
+  ];
+}
+
+function uwcoe_stories_theme_suggestions_page_alter(array &$suggestions, array $variables) {
+  $node = \Drupal::routeMatch()->getParameter('node');
+  if ($node && $node->bundle() === 'story') {
+    $suggestions[] = 'page__uwcoe_stories';
+  }
+}
+
+function uwcoe_stories_theme_suggestions_media_alter(array &$suggestions, array $variables) {
+  $node = \Drupal::routeMatch()->getParameter('node');
+  if ($node && $node->bundle() === 'story') {
+    $suggestions[] = 'media__uwcoe_stories';
+  }
+}

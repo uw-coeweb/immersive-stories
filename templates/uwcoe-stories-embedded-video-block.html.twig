@@ -1,0 +1,15 @@
+<div class="uwcoe-stories-embedded-video uwcoe-stories-copy">
+  <div class="uwcoe-stories-media-responsive">
+    <iframe
+      class="uwcoe-stories-embedded-video-iframe"
+      src="{{ content.video_src }}"
+      frameborder="0"
+      allow="accelerometer; autoplay; encrypted-media; gyroscope; picture-in-picture"
+    ></iframe>
+  </div>
+  {% if content.caption %}
+    <div class="uwcoe-stories-embedded-video-caption">
+      {{ content.caption }}
+    </div>
+  {% endif %}
+</div>

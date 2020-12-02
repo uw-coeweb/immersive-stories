@@ -1,0 +1,10 @@
+name: UWCoE Immersive Stories
+description: 'Provides blocks and other features for Immersive Stories'
+type: module
+core: 8.x
+package: UWCoE
+
+dependencies:
+    - block
+    - media
+    - media_library_form_element

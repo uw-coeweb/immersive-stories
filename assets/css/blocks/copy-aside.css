@@ -1,0 +1,57 @@
+.uwcoe-stories-copy-aside-block {
+  margin-bottom: 2rem;
+}
+
+.uwcoe-stories-aside {
+  width: 100%;
+  max-width: 253px;
+  padding-top: .5rem;
+  padding-bottom: 1rem;
+  background-color: #eee;
+  margin: auto;
+}
+
+.uwcoe-stories-aside > * {
+  margin-bottom: 0;
+  padding: 0 2rem;
+}
+
+.uwcoe-stories-aside > p {
+  font-size: .9rem;
+  letter-spacing: .5px;
+}
+
+@media (min-width: 768px) {
+  .uwcoe-stories-aside {
+    max-width: max-content;
+    padding-top: .5rem;
+    padding-bottom: 1rem;
+  }
+}
+
+@media (min-width: 992px) {
+  .uwcoe-stories-copy-aside-block.uwcoe-stories-copy {
+    position: relative;
+    display: flex;
+    flex-direction: row;
+    align-items: flex-start;
+  }
+
+  .uwcoe-stories-copy-aside-block .uwcoe-stories-copy-body {
+    width: 100%;
+  }
+
+  .uwcoe-stories-copy-aside-block .uwcoe-stories-aside {
+    width: 253px;
+    min-width: 253px;
+    margin-right: -140px;
+    margin-left: 1rem;
+  }
+}
+
+@media (min-width: 1440px) {
+  .uwcoe-stories-copy-aside-block .uwcoe-stories-aside {
+    margin-right: -320px;
+    margin-left: auto;
+  }
+}

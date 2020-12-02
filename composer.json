@@ -1,0 +1,29 @@
+{
+    "name": "uwcoe/uwcoe_stories",
+    "type": "drupal-module",
+    "description": "Provides blocks and other features for Immersive Stories",
+    "authors": [
+        {
+            "name": "Jon Shilling",
+            "email": "jshill@uw.edu"
+        },
+        {
+            "name": "Justin Labak",
+            "email": "jtlabak@uw.edu"
+        }
+    ],
+    "require": {
+        "drupal/core": "~8",
+        "drupal/media_library_form_element": "^2.0"
+    },
+    "repositories": [
+        {
+            "type": "composer",
+            "url": "https://packages.drupal.org/8"
+        },
+        {
+            "type": "composer",
+            "url": "http://janeway.engr.washington.edu/drupal-packages"
+        }
+    ]
+}

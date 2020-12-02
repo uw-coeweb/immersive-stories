@@ -1,0 +1,25 @@
+<div id="{{ id }}" class="uwcoe-stories-image-gallery">
+    {% for slide in slides %}
+      {% set slideClasses = [
+          'slide',
+          loop.first ? 'active',
+        ] 
+      %}
+      <div class="{{ slideClasses|join(' ') }}">
+        <img src="{{ slide.image }}" />
+        <p class="caption">{{ slide.caption }}</p>
+      </div>
+    {% endfor %}
+  <div class="nav-left"><i class="nav-arrow fas fa-chevron-left"></i></div>
+  <div class="nav-right"><i class="nav-arrow fas fa-chevron-right"></i></div>
+  <ol class="nav-indicators">
+    {% for slide in slides %}
+      {% set indicatorClasses = [
+          'nav-indicator',
+          loop.first ? 'active',
+        ] 
+      %}
+      <li class="{{ indicatorClasses|join(' ') }}"></li>
+    {% endfor %}
+  </ol>
+</div>
