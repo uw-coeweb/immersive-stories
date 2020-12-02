@@ -13,7 +13,18 @@ The Immersive Stories module for Drupal 8 provides block and layout plugins for 
 The module assumes that the images on your site are managed via Drupal 8's core Media module.
 
 ## Installation
-Install this module as you would any Drupal 8 module.
+You can install this module via composer by adding the following to the list of repositories in your Drupal site's composer.json:
+```
+{
+    "type": "vcs",
+    "url": "https://github.com/uw-coeweb/immersive-stories.git"
+}
+```
+You can then run  `composer require uwcoe/uwcoe_stories` to bring the module into your site.
+
+Alternatively you can simply download this repository and place the folder in your `modules/custom` directory.
+
+Finally, make sure to enable the module with drush: `drush en uwcoe_stories`
 
 ## Component Reference
 - Hero Block
